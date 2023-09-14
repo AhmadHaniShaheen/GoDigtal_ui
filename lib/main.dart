@@ -139,10 +139,18 @@ class _MealState extends State<Meal> {
                               },
                             );
                           },
-                          icon: const Icon(
-                            Icons.comment,
-                            color: Colors.grey,
-                            size: 32,
+                          icon: Row(
+                            children: [
+                              const Icon(
+                                Icons.comment,
+                                color: Colors.grey,
+                                size: 32,
+                              ),
+                              Text(
+                                commits.length.toString(),
+                                style: const TextStyle(color: Colors.grey),
+                              ),
+                            ],
                           ),
                         ),
                       ],
